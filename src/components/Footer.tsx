@@ -29,7 +29,7 @@ export default function Footer() {
               <Link href="/servicii" className="block hover:text-white">
                 Servicii
               </Link>
-              <Link href="/portofoliu" className="block hover:text-white">
+              <Link href="portofolio" className="block hover:text-white">
                 Proiecte
               </Link>
               <Link href="/studii" className="block hover:text-white">

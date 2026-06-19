@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/images/portofoliu/grosi/grosi-cover.jpg",
-  "/images/portofoliu/grosi/grosi-01.jpg",
-  "/images/portofoliu/grosi/grosi-02.jpg",
+  "/imagesportofolio/grosi/grosi-cover.jpg",
+  "/imagesportofolio/grosi/grosi-01.jpg",
+  "/imagesportofolio/grosi/grosi-02.jpg",
 ];
 
 export default function PugGrosiPage() {
@@ -13,7 +13,7 @@ export default function PugGrosiPage() {
       <section className="px-8 py-20">
         <div className="mx-auto max-w-7xl">
           <Link
-            href="/portofoliu"
+            href="portofolio"
             className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500"
           >
             ← Înapoi la portofoliu
@@ -38,7 +38,7 @@ export default function PugGrosiPage() {
         <div className="mx-auto max-w-7xl">
           <div className="relative h-[640px] overflow-hidden rounded-[44px]">
             <Image
-              src="/images/portofoliu/grosi/grosi-cover.jpg"
+              src="/imagesportofolio/grosi/grosi-cover.jpg"
               alt="PUG Groși"
               fill
               priority

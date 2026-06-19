@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/images/portofoliu/coltau/coltau-cover.jpg",
-  "/images/portofoliu/coltau/coltau-01.jpg",
-  "/images/portofoliu/coltau/coltau-02.jpg",
-  "/images/portofoliu/coltau/coltau-03.jpg",
+  "/imagesportofolio/coltau/coltau-cover.jpg",
+  "/imagesportofolio/coltau/coltau-01.jpg",
+  "/imagesportofolio/coltau/coltau-02.jpg",
+  "/imagesportofolio/coltau/coltau-03.jpg",
 ];
 
 export default function PugColtauPage() {
@@ -14,7 +14,7 @@ export default function PugColtauPage() {
       <section className="px-8 py-20">
         <div className="mx-auto max-w-7xl">
           <Link
-            href="/portofoliu"
+            href="portofolio"
             className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500"
           >
             ← Înapoi la portofoliu
@@ -40,7 +40,7 @@ export default function PugColtauPage() {
         <div className="mx-auto max-w-7xl">
           <div className="relative h-[640px] overflow-hidden rounded-[44px]">
             <Image
-              src="/images/portofoliu/coltau/coltau-cover.jpg"
+              src="/imagesportofolio/coltau/coltau-cover.jpg"
               alt="PUG Coltău"
               fill
               priority

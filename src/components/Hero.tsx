@@ -26,7 +26,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="/portofoliu"
+                href="portofolio"
                 className="rounded-full bg-black px-8 py-4 text-white transition hover:bg-zinc-800"
               >
                 Vezi proiectele

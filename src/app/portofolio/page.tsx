@@ -7,7 +7,7 @@ const projects = [
     category: "PUG • Alba",
     description:
       "Strategie urbană, mobilitate, turism și reconversie economică într-un teritoriu cu patrimoniu industrial.",
-    image: "/images/portofoliu/zlatna/zlatna-cover.jpg",
+    image: "/imagesportofolio/zlatna/zlatna-cover.jpg",
     href: "/proiecte/pug-zlatna",
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     category: "PUG • Maramureș",
     description:
       "Dezvoltare periurbană, mobilitate și structurarea noului centru al comunei în relație cu Baia Mare.",
-    image: "/images/portofoliu/grosi/grosi-cover.jpg",
+    image: "/imagesportofolio/grosi/grosi-cover.jpg",
     href: "/proiecte/pug-grosi",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     category: "PUG • Maramureș",
     description:
       "Valorificarea patrimoniului Castelului Teleki și dezvoltarea funcțiunilor economice și publice.",
-    image: "/images/portofoliu/coltau/coltau-cover.jpg",
+    image: "/imagesportofolio/coltau/coltau-cover.jpg",
     href: "/proiecte/pug-coltau",
   },
 ];
