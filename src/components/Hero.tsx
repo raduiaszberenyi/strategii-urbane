@@ -26,7 +26,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="/portofoliu"
+                href="/portofolio"
                 className="rounded-full bg-black px-8 py-4 text-white transition hover:bg-zinc-800"
               >
                 Vezi proiectele
@@ -41,10 +41,16 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex h-[600px] items-center justify-center rounded-[40px] bg-zinc-100 shadow-2xl">
-            <p className="text-sm uppercase tracking-[0.4em] text-zinc-400">
-              Video hero
-            </p>
+          <div className="relative h-[600px] overflow-hidden rounded-[40px] shadow-2xl">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-cover"
+            >
+              <source src="/videos/hero.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

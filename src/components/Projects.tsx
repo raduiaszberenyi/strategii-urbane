@@ -1,33 +1,30 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
-  {
-    title: "PUG Negrești-Oaș",
-    type: "Plan Urbanistic General",
-    location: "Satu Mare",
-    image: "/images/negresti.jpg.jpg",
-    text: "Planificare urbană integrată pentru dezvoltarea unui oraș-poartă al Țării Oașului.",
-  },
   {
     title: "PUG Zlatna",
     type: "Plan Urbanistic General",
     location: "Alba",
-    image: "/images/zlatna.jpg.jpg",
+    image: "/images/portofolio/zlatna/zlatna-cover.jpg",
     text: "Strategie urbană, mobilitate, turism și reconversie economică într-un teritoriu cu patrimoniu industrial.",
+    href: "/proiecte/pug-zlatna",
   },
   {
     title: "PUG Groși",
     type: "Plan Urbanistic General",
     location: "Maramureș",
-    image: "/images/grosi.jpg.jpg",
-    text: "Viziune periurbană pentru o comună aflată în relație directă cu municipiul Baia Mare.",
+    image: "/images/portofolio/grosi/grosi-cover.jpg",
+    text: "Dezvoltare periurbană, mobilitate și structurarea noului centru al comunei în relație cu Baia Mare.",
+    href: "/proiecte/pug-grosi",
   },
   {
     title: "PUG Coltău",
     type: "Plan Urbanistic General",
     location: "Maramureș",
-    image: "/images/coltau.jpg.jpg",
-    text: "Reglementare urbanistică, protecția patrimoniului și dezvoltare strategică locală.",
+    image: "/images/portofolio/coltau/coltau-cover.jpg",
+    text: "Valorificarea patrimoniului Castelului Teleki și dezvoltarea funcțiunilor economice și publice.",
+    href: "/proiecte/pug-coltau",
   },
 ];
 
@@ -40,16 +37,15 @@ export default function Projects() {
             Portofoliu
           </p>
 
-          <h2 className="text-5xl font-light">
-            Proiecte reprezentative
-          </h2>
+          <h2 className="text-5xl font-light">Proiecte reprezentative</h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
-            <article
+            <Link
               key={project.title}
-              className="group overflow-hidden rounded-[32px] border border-white/10 bg-white/5"
+              href={project.href}
+              className="group overflow-hidden rounded-[32px] border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:bg-white/10"
             >
               <div className="relative h-[360px] overflow-hidden">
                 <Image
@@ -65,19 +61,15 @@ export default function Projects() {
                   {project.type} · {project.location}
                 </p>
 
-                <h3 className="mb-4 text-3xl font-light">
-                  {project.title}
-                </h3>
+                <h3 className="mb-4 text-3xl font-light">{project.title}</h3>
 
-                <p className="mb-8 text-zinc-300">
-                  {project.text}
-                </p>
+                <p className="mb-8 text-zinc-300">{project.text}</p>
 
-                <button className="text-sm uppercase tracking-[0.25em] text-white">
+                <span className="text-sm uppercase tracking-[0.25em] text-white">
                   Vezi proiectul →
-                </button>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
