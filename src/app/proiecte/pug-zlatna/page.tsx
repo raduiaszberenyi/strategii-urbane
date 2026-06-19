@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/imagesportofolio/zlatna/zlatna-cover.jpg",
-  "/imagesportofolio/zlatna/zlatna-fenes.jpg",
-  "/imagesportofolio/zlatna/zlatna-incadrare.jpg",
-  "/imagesportofolio/zlatna/zlatna-reglementari.jpg",
-  "/imagesportofolio/zlatna/zlatna-strategie.jpg",
+  "/images/portofolio/zlatna/zlatna-cover.jpg",
+  "/images/portofolio/zlatna/zlatna-fenes.jpg",
+  "/images/portofolio/zlatna/zlatna-incadrare.jpg",
+  "/images/portofolio/zlatna/zlatna-reglementari.jpg",
+  "/images/portofolio/zlatna/zlatna-strategie.jpg",
 ];
 
 export default function PugZlatnaPage() {
@@ -15,7 +15,7 @@ export default function PugZlatnaPage() {
       <section className="px-8 py-20">
         <div className="mx-auto max-w-7xl">
           <Link
-            href="portofolio"
+            href="/portofolio"
             className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500"
           >
             ← Înapoi la portofoliu
@@ -42,7 +42,7 @@ export default function PugZlatnaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="relative h-[640px] overflow-hidden rounded-[44px]">
             <Image
-              src="/imagesportofolio/zlatna/zlatna-cover.jpg"
+              src="/images/portofolio/zlatna/zlatna-cover.jpg"
               alt="PUG Zlatna"
               fill
               priority

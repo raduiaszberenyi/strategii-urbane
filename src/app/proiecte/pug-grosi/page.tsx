@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/imagesportofolio/grosi/grosi-cover.jpg",
-  "/imagesportofolio/grosi/grosi-01.jpg",
-  "/imagesportofolio/grosi/grosi-02.jpg",
+  "/images/portofolio/grosi/grosi-cover.jpg",
+  "/images/portofolio/grosi/grosi-01.jpg",
+  "/images/portofolio/grosi/grosi-02.jpg",
 ];
 
 export default function PugGrosiPage() {
@@ -12,10 +12,7 @@ export default function PugGrosiPage() {
     <main className="bg-white pt-32">
       <section className="px-8 py-20">
         <div className="mx-auto max-w-7xl">
-          <Link
-            href="portofolio"
-            className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500"
-          >
+          <Link href="/portofolio" className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500">
             ← Înapoi la portofoliu
           </Link>
 
@@ -28,8 +25,8 @@ export default function PugGrosiPage() {
           </h1>
 
           <p className="max-w-4xl text-2xl leading-relaxed text-zinc-600">
-            Documentație strategică de urbanism pentru dezvoltarea comunei
-            Groși în contextul expansiunii zonei metropolitane Baia Mare.
+            Documentație strategică de urbanism pentru dezvoltarea comunei Groși
+            în contextul expansiunii zonei metropolitane Baia Mare.
           </p>
         </div>
       </section>
@@ -38,7 +35,7 @@ export default function PugGrosiPage() {
         <div className="mx-auto max-w-7xl">
           <div className="relative h-[640px] overflow-hidden rounded-[44px]">
             <Image
-              src="/imagesportofolio/grosi/grosi-cover.jpg"
+              src="/images/portofolio/grosi/grosi-cover.jpg"
               alt="PUG Groși"
               fill
               priority
@@ -56,25 +53,10 @@ export default function PugGrosiPage() {
             </p>
 
             <div className="space-y-5 text-zinc-600">
-              <p>
-                <span className="text-zinc-950">Localizare:</span> Comuna
-                Groși, județul Maramureș
-              </p>
-
-              <p>
-                <span className="text-zinc-950">Beneficiar:</span> UAT Comuna
-                Groși
-              </p>
-
-              <p>
-                <span className="text-zinc-950">Tip documentație:</span> Plan
-                Urbanistic General
-              </p>
-
-              <p>
-                <span className="text-zinc-950">Specific:</span> zonă
-                periurbană a municipiului Baia Mare
-              </p>
+              <p><span className="text-zinc-950">Localizare:</span> Comuna Groși, județul Maramureș</p>
+              <p><span className="text-zinc-950">Beneficiar:</span> UAT Comuna Groși</p>
+              <p><span className="text-zinc-950">Tip documentație:</span> Plan Urbanistic General</p>
+              <p><span className="text-zinc-950">Specific:</span> zonă periurbană a municipiului Baia Mare</p>
             </div>
           </div>
 
@@ -107,10 +89,7 @@ export default function PugGrosiPage() {
 
           <div className="grid gap-8 md:grid-cols-2">
             {gallery.map((image, index) => (
-              <div
-                key={image}
-                className="relative h-[420px] overflow-hidden rounded-[36px] bg-zinc-100"
-              >
+              <div key={image} className="relative h-[420px] overflow-hidden rounded-[36px] bg-zinc-100">
                 <Image
                   src={image}
                   alt={`PUG Groși imagine ${index + 1}`}

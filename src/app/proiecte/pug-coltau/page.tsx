@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/imagesportofolio/coltau/coltau-cover.jpg",
-  "/imagesportofolio/coltau/coltau-01.jpg",
-  "/imagesportofolio/coltau/coltau-02.jpg",
-  "/imagesportofolio/coltau/coltau-03.jpg",
+  "/images/portofolio/coltau/coltau-cover.jpg",
+  "/images/portofolio/coltau/coltau-01.jpg",
+  "/images/portofolio/coltau/coltau-02.jpg",
 ];
 
 export default function PugColtauPage() {
@@ -13,10 +12,7 @@ export default function PugColtauPage() {
     <main className="bg-white pt-32">
       <section className="px-8 py-20">
         <div className="mx-auto max-w-7xl">
-          <Link
-            href="portofolio"
-            className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500"
-          >
+          <Link href="/portofolio" className="mb-12 inline-block text-sm uppercase tracking-[0.25em] text-zinc-500">
             ← Înapoi la portofoliu
           </Link>
 
@@ -40,7 +36,7 @@ export default function PugColtauPage() {
         <div className="mx-auto max-w-7xl">
           <div className="relative h-[640px] overflow-hidden rounded-[44px]">
             <Image
-              src="/imagesportofolio/coltau/coltau-cover.jpg"
+              src="/images/portofolio/coltau/coltau-cover.jpg"
               alt="PUG Coltău"
               fill
               priority
@@ -58,25 +54,10 @@ export default function PugColtauPage() {
             </p>
 
             <div className="space-y-5 text-zinc-600">
-              <p>
-                <span className="text-zinc-950">Localizare:</span>
-                {" "}Comuna Coltău, județul Maramureș
-              </p>
-
-              <p>
-                <span className="text-zinc-950">Beneficiar:</span>
-                {" "}UAT Comuna Coltău
-              </p>
-
-              <p>
-                <span className="text-zinc-950">Tip documentație:</span>
-                {" "}Plan Urbanistic General
-              </p>
-
-              <p>
-                <span className="text-zinc-950">Element strategic:</span>
-                {" "}Castelul Teleki și dezvoltarea funcțiunilor publice și economice
-              </p>
+              <p><span className="text-zinc-950">Localizare:</span> Comuna Coltău, județul Maramureș</p>
+              <p><span className="text-zinc-950">Beneficiar:</span> UAT Comuna Coltău</p>
+              <p><span className="text-zinc-950">Tip documentație:</span> Plan Urbanistic General</p>
+              <p><span className="text-zinc-950">Element strategic:</span> Castelul Teleki și dezvoltarea funcțiunilor publice și economice</p>
             </div>
           </div>
 
@@ -109,10 +90,7 @@ export default function PugColtauPage() {
 
           <div className="grid gap-8 md:grid-cols-2">
             {gallery.map((image, index) => (
-              <div
-                key={image}
-                className="relative h-[420px] overflow-hidden rounded-[36px] bg-zinc-100"
-              >
+              <div key={image} className="relative h-[420px] overflow-hidden rounded-[36px] bg-zinc-100">
                 <Image
                   src={image}
                   alt={`PUG Coltău imagine ${index + 1}`}

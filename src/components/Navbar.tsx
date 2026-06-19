@@ -24,7 +24,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="portofolio"
+              href="/portofolio"
               className="soft-link hover:text-black"
             >
               PROIECTE
