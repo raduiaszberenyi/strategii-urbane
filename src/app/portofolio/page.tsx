@@ -26,6 +26,47 @@ const projects = [
     image: "/images/portofolio/coltau/coltau-cover.jpg",
     href: "/proiecte/pug-coltau",
   },
+  {
+    title: "PUG Negrești-Oaș",
+    category: "PUG • Satu Mare",
+    description:
+      "Planificare urbană integrată pentru dezvoltarea unui oraș-poartă al Țării Oașului.",
+    image: "/images/portofolio/negresti-oas/negresti-oas-cover.jpg",
+    href: "/proiecte/pug-negresti-oas",
+  },
+  {
+    title: "PUG Câmpulung la Tisa",
+    category: "PUG • Maramureș",
+    description:
+      "Actualizarea Planului Urbanistic General și stabilirea direcțiilor de dezvoltare durabilă ale comunei Câmpulung la Tisa.",
+    image:
+      "/images/portofolio/campulung-la-tisa/campulung-la-tisa-cover.jpg",
+    href: "/proiecte/pug-campulung-la-tisa",
+  },
+  {
+    title: "PUG Mireșu Mare",
+    category: "PUG • Maramureș",
+    description:
+      "Documentație de urbanism pentru actualizarea direcțiilor de dezvoltare ale comunei Mireșu Mare.",
+    image: "/images/portofolio/miresu-mare/miresu-mare-cover.jpg",
+    href: "/proiecte/pug-miresu-mare",
+  },
+  {
+    title: "PUG Tăuteu",
+    category: "PUG • Bihor",
+    description:
+      "Documentație de urbanism general pentru stabilirea direcțiilor de dezvoltare ale comunei Tăuteu.",
+    image: "/images/portofolio/tauteu/tauteu-cover.jpg",
+    href: "/proiecte/pug-tauteu",
+  },
+  {
+    title: "PUG Vadu Izei",
+    category: "PUG • Maramureș",
+    description:
+      "Documentație de urbanism general pentru stabilirea direcțiilor de dezvoltare ale comunei Vadu Izei.",
+    image: "/images/portofolio/vadu-izei/vadu-izei-cover.jpg",
+    href: "/proiecte/pug-vadu-izei",
+  },
 ];
 
 export default function PortofolioPage() {
@@ -66,6 +107,7 @@ export default function PortofolioPage() {
                   alt={project.title}
                   fill
                   priority
+                  sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                   className="object-cover transition duration-700 group-hover:scale-105"
                 />
               </div>

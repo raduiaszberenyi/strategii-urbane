@@ -31,6 +31,13 @@ export default function Navbar() {
             </Link>
 
             <Link
+              href="/harta"
+              className="soft-link hover:text-black"
+            >
+              HARTĂ
+            </Link>
+
+            <Link
               href="/studii"
               className="soft-link hover:text-black"
             >
