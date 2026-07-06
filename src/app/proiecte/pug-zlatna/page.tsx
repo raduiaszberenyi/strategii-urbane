@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 const gallery = [
   "/images/portofolio/zlatna/zlatna-cover.jpg",
@@ -49,6 +50,21 @@ export default function PugZlatnaPage() {
               className="object-cover"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="px-8 pb-24">
+        <div className="mx-auto max-w-7xl">
+          <p className="mb-8 text-sm uppercase tracking-[0.25em] text-zinc-400">
+            Comparație existent / propus
+          </p>
+
+          <BeforeAfterSlider
+            beforeImage="/images/portofolio/zlatna/zlatna-incadrare.jpg"
+            afterImage="/images/portofolio/zlatna/zlatna-reglementari.jpg"
+            beforeLabel="Existent"
+            afterLabel="Propus"
+          />
         </div>
       </section>
 

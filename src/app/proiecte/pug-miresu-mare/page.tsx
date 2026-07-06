@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 const plans = [
   {
@@ -61,6 +62,30 @@ export default function PugMiresuMarePage() {
               priority
               sizes="100vw"
               className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="px-8 pb-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="mb-10 text-4xl font-light text-zinc-950">
+            Comparații existent / propus
+          </h2>
+
+          <div className="grid gap-10">
+            <BeforeAfterSlider
+              beforeImage="/images/portofolio/miresu-mare/plan-01.jpg"
+              afterImage="/images/portofolio/miresu-mare/plan-02.jpg"
+              beforeLabel="Existent"
+              afterLabel="Propus"
+            />
+
+            <BeforeAfterSlider
+              beforeImage="/images/portofolio/miresu-mare/plan-03.jpg"
+              afterImage="/images/portofolio/miresu-mare/plan-04.jpg"
+              beforeLabel="Existent"
+              afterLabel="Propus"
             />
           </div>
         </div>

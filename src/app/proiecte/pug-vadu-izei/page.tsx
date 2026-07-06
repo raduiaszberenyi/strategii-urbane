@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 
 const plans = [
   {
@@ -51,6 +52,21 @@ export default function PugVaduIzeiPage() {
               className="object-cover"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="px-8 pb-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="mb-10 text-4xl font-light text-zinc-950">
+            Comparație existent / propus
+          </h2>
+
+          <BeforeAfterSlider
+            beforeImage="/images/portofolio/vadu-izei/vadu-izei-01.jpg"
+            afterImage="/images/portofolio/vadu-izei/vadu-izei-02.jpg"
+            beforeLabel="Existent"
+            afterLabel="Propus"
+          />
         </div>
       </section>
 
