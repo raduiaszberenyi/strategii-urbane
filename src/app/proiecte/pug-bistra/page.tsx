@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/images/portofolio/zlatna/zlatna-cover.jpg",
-  "/images/portofolio/zlatna/zlatna-fenes.jpg",
-  "/images/portofolio/zlatna/zlatna-incadrare.jpg",
-  "/images/portofolio/zlatna/zlatna-reglementari.jpg",
-  "/images/portofolio/zlatna/zlatna-strategie.jpg",
+  "/images/portofolio/bistra/bistra-cover.jpg",
+  "/images/portofolio/bistra/plansa-01.jpg",
+  "/images/portofolio/bistra/plansa-02.jpg",
+  "/images/portofolio/bistra/plansa-03.jpg",
+  "/images/portofolio/bistra/plansa-04.jpg",
 ];
 
-export default function PugZlatnaPage() {
+export default function PugBistraPage() {
   return (
     <main className="bg-white pt-32">
       <section className="px-8 py-20">
@@ -26,14 +26,13 @@ export default function PugZlatnaPage() {
           </p>
 
           <h1 className="mb-10 max-w-5xl text-6xl font-light leading-tight text-zinc-950 md:text-7xl">
-            PUG Zlatna
+            PUG Bistra
           </h1>
 
           <p className="max-w-4xl text-2xl leading-relaxed text-zinc-600">
-            Documentație de urbanism pentru actualizarea direcțiilor de
-            dezvoltare ale orașului Zlatna, cu integrarea analizelor teritoriale,
-            a reglementărilor urbanistice și a obiectivelor strategice de
-            dezvoltare locală.
+            Documentație de urbanism general pentru stabilirea direcțiilor de
+            dezvoltare ale comunei Bistra și reglementarea dezvoltării
+            teritoriale.
           </p>
         </div>
       </section>
@@ -42,10 +41,11 @@ export default function PugZlatnaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="relative h-[640px] overflow-hidden rounded-[44px]">
             <Image
-              src="/images/portofolio/zlatna/zlatna-cover.jpg"
-              alt="PUG Zlatna"
+              src="/images/portofolio/bistra/bistra-cover.jpg"
+              alt="PUG Bistra"
               fill
               priority
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -61,20 +61,23 @@ export default function PugZlatnaPage() {
 
             <div className="space-y-5 text-zinc-600">
               <p>
-                <span className="text-zinc-950">Localizare:</span> Orașul
-                Zlatna, județul Alba
+                <span className="text-zinc-950">Localizare:</span> Comuna
+                Bistra, județul Maramureș
               </p>
+
               <p>
-                <span className="text-zinc-950">Beneficiar:</span> UAT Orașul
-                Zlatna
+                <span className="text-zinc-950">Beneficiar:</span> UAT Comuna
+                Bistra
               </p>
+
               <p>
                 <span className="text-zinc-950">Tip documentație:</span> Plan
                 Urbanistic General
               </p>
+
               <p>
-                <span className="text-zinc-950">Stadiu:</span> documentație în
-                curs de avizare
+                <span className="text-zinc-950">Categorie:</span> Urbanism,
+                dezvoltare teritorială și reglementare urbanistică
               </p>
             </div>
           </div>
@@ -85,17 +88,17 @@ export default function PugZlatnaPage() {
             </h2>
 
             <p className="mb-6 text-lg leading-relaxed text-zinc-600">
-              Proiectul urmărește corelarea dezvoltării urbane cu specificul
-              teritorial al orașului Zlatna, valorificarea cadrului natural și
-              cultural, restructurarea zonelor cu potențial de regenerare urbană
-              și consolidarea relației dintre localitățile componente.
+              Documentația urmărește actualizarea cadrului de dezvoltare
+              teritorială al comunei Bistra și corelarea reglementărilor
+              urbanistice cu structura localităților componente, infrastructura
+              existentă și particularitățile cadrului natural.
             </p>
 
             <p className="text-lg leading-relaxed text-zinc-600">
-              Documentația include analize de fundamentare, reglementări
-              urbanistice, propuneri de dezvoltare spațială și măsuri pentru
-              îmbunătățirea infrastructurii, mobilității, locuirii, economiei
-              locale și calității mediului.
+              Propunerile vizează organizarea coerentă a zonelor construite,
+              dezvoltarea infrastructurii și a serviciilor, protejarea
+              elementelor valoroase ale teritoriului și stabilirea condițiilor
+              pentru dezvoltarea viitoare a comunei.
             </p>
           </div>
         </div>
@@ -115,8 +118,9 @@ export default function PugZlatnaPage() {
               >
                 <Image
                   src={image}
-                  alt={`PUG Zlatna imagine ${index + 1}`}
+                  alt={`PUG Bistra imagine ${index + 1}`}
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>

@@ -67,6 +67,14 @@ const projects = [
     image: "/images/portofolio/vadu-izei/vadu-izei-cover.jpg",
     href: "/proiecte/pug-vadu-izei",
   },
+  {
+    title: "PUG Bistra",
+    category: "PUG • Maramureș",
+    description:
+      "Documentație de urbanism general pentru stabilirea direcțiilor de dezvoltare ale comunei Bistra și reglementarea dezvoltării teritoriale.",
+    image: "/images/portofolio/bistra/bistra-cover.jpg",
+    href: "/proiecte/pug-bistra",
+  },
 ];
 
 export default function PortofolioPage() {
