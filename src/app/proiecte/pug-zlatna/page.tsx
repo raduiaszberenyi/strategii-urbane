@@ -2,11 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 const gallery = [
-  "/images/portofolio/zlatna/zlatna-cover.jpg",
-  "/images/portofolio/zlatna/zlatna-fenes.jpg",
-  "/images/portofolio/zlatna/zlatna-incadrare.jpg",
-  "/images/portofolio/zlatna/zlatna-reglementari.jpg",
-  "/images/portofolio/zlatna/zlatna-strategie.jpg",
+  "/images/portofolio/zlatna/zlatna-01.jpg",
+  "/images/portofolio/zlatna/zlatna-02.jpg",
+  "/images/portofolio/zlatna/zlatna-03.jpg",
+  "/images/portofolio/zlatna/zlatna-04.jpg",
+  "/images/portofolio/zlatna/zlatna-05.jpg",
+  "/images/portofolio/zlatna/zlatna-06.jpg",
+  "/images/portofolio/zlatna/zlatna-07.jpg",
+  "/images/portofolio/zlatna/zlatna-08.jpg",
+  "/images/portofolio/zlatna/zlatna-09.jpg",
+  "/images/portofolio/zlatna/zlatna-10.jpg",
 ];
 
 export default function PugZlatnaPage() {
@@ -46,6 +51,7 @@ export default function PugZlatnaPage() {
               alt="PUG Zlatna"
               fill
               priority
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -64,14 +70,17 @@ export default function PugZlatnaPage() {
                 <span className="text-zinc-950">Localizare:</span> Orașul
                 Zlatna, județul Alba
               </p>
+
               <p>
                 <span className="text-zinc-950">Beneficiar:</span> UAT Orașul
                 Zlatna
               </p>
+
               <p>
                 <span className="text-zinc-950">Tip documentație:</span> Plan
                 Urbanistic General
               </p>
+
               <p>
                 <span className="text-zinc-950">Stadiu:</span> documentație în
                 curs de avizare
@@ -115,8 +124,9 @@ export default function PugZlatnaPage() {
               >
                 <Image
                   src={image}
-                  alt={`PUG Zlatna imagine ${index + 1}`}
+                  alt={`PUG Zlatna planșa ${index + 1}`}
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>

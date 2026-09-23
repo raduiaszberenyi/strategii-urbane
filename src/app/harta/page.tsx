@@ -94,6 +94,73 @@ const projects = [
     description:
       "Documentație de urbanism general pentru stabilirea direcțiilor de dezvoltare ale comunei Vadu Izei.",
   },
+
+  {
+    title: "PUZ Budești",
+    county: "Maramureș",
+    type: "PUZ",
+    lat: 47.7333,
+    lng: 23.95,
+    href: "/proiecte/puz-budesti",
+    image: "/images/portofolio/puz/puz-budesti.jpg",
+    description:
+      "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate.",
+  },
+  {
+    title: "PUZ Metro",
+    county: "Maramureș",
+    type: "PUZ",
+    lat: 47.6573,
+    lng: 23.5681,
+    href: "/proiecte/puz-metro",
+    image: "/images/portofolio/puz/puz-metro.jpg",
+    description:
+      "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate din Baia Mare.",
+  },
+  {
+    title: "PUZ Ocna Șugatag",
+    county: "Maramureș",
+    type: "PUZ",
+    lat: 47.7833,
+    lng: 23.9333,
+    href: "/proiecte/puz-ocna-sugatag",
+    image: "/images/portofolio/puz/puz-ocna-sugatag.jpg",
+    description:
+      "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate.",
+  },
+  {
+    title: "PUZ Ocna Șugatag 2",
+    county: "Maramureș",
+    type: "PUZ",
+    lat: 47.786,
+    lng: 23.938,
+    href: "/proiecte/puz-ocna-sugatag-2",
+    image: "/images/portofolio/puz/puz-ocna-sugatag-2.jpg",
+    description:
+      "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate.",
+  },
+  {
+    title: "PUZ Săcălășeni",
+    county: "Maramureș",
+    type: "PUZ",
+    lat: 47.5833,
+    lng: 23.5667,
+    href: "/proiecte/puz-sacalaseni",
+    image: "/images/portofolio/puz/puz-sacalaseni.jpg",
+    description:
+      "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate.",
+  },
+  {
+    title: "PUZ Suciu de Sus",
+    county: "Maramureș",
+    type: "PUZ",
+    lat: 47.4333,
+    lng: 24.0333,
+    href: "/proiecte/puz-suciu-de-sus",
+    image: "/images/portofolio/puz/puz-suciu-de-sus.jpg",
+    description:
+      "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate.",
+  },
 ];
 
 const filters = ["Toate", "PUG", "PUZ", "Strategie", "GIS"];
@@ -105,19 +172,19 @@ const stats = [
     label: "PUG-uri",
   },
   {
+    value: 6,
+    suffix: "",
+    label: "PUZ-uri",
+  },
+  {
     value: 4,
     suffix: "",
     label: "Județe",
   },
   {
-    value: 8,
+    value: 14,
     suffix: "",
-    label: "Localități",
-  },
-  {
-    value: 40,
-    suffix: "+",
-    label: "Planșe",
+    label: "Proiecte",
   },
 ];
 
@@ -243,6 +310,7 @@ export default function HartaPage() {
       if (!document.querySelector("#harta-premium-style")) {
         const style = document.createElement("style");
         style.id = "harta-premium-style";
+
         style.innerHTML = `
           .leaflet-container {
             font-family: inherit;
@@ -275,7 +343,10 @@ export default function HartaPage() {
             align-items: center;
             justify-content: center;
             transform: rotate(-45deg);
-            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+            transition:
+              transform 0.2s ease,
+              box-shadow 0.2s ease,
+              opacity 0.2s ease;
           }
 
           .su-marker::before {
@@ -373,6 +444,7 @@ export default function HartaPage() {
             display: none;
           }
         `;
+
         document.head.appendChild(style);
       }
 
@@ -408,6 +480,7 @@ export default function HartaPage() {
 
       window.projectsMap = map;
       window.projectMarkers = [];
+
       window.markerClusterGroup = window.L.markerClusterGroup({
         showCoverageOnHover: false,
         spiderfyOnMaxZoom: true,
@@ -437,12 +510,11 @@ export default function HartaPage() {
         .addTo(map);
 
       window.L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
         {
           attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-          subdomains: "abcd",
-          maxZoom: 20,
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          maxZoom: 19,
         }
       ).addTo(map);
 
@@ -461,7 +533,7 @@ export default function HartaPage() {
         iconAnchor: [27, 54],
       });
 
-      projects.forEach((project, index) => {
+      projects.forEach((project) => {
         bounds.extend([project.lat, project.lng]);
 
         const marker = window.L.marker([project.lat, project.lng], {
@@ -556,6 +628,7 @@ export default function HartaPage() {
               <p className="mb-3 text-5xl font-light text-zinc-950">
                 <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               </p>
+
               <p className="text-sm uppercase tracking-[0.25em] text-zinc-500">
                 {stat.label}
               </p>

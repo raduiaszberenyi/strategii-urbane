@@ -15,6 +15,10 @@ export default function Navbar() {
             <Logo />
 
             <nav className="hidden items-center gap-10 text-sm tracking-[0.12em] text-zinc-600 md:flex">
+              <Link href="/" className="soft-link hover:text-black">
+                ACASĂ
+              </Link>
+
               <Link href="/despre" className="soft-link hover:text-black">
                 DESPRE
               </Link>
@@ -71,6 +75,10 @@ export default function Navbar() {
           </div>
 
           <nav className="mt-20 grid gap-8 text-4xl font-light tracking-tight text-zinc-950">
+            <Link href="/" onClick={() => setOpen(false)}>
+              Acasă
+            </Link>
+
             <Link href="/despre" onClick={() => setOpen(false)}>
               Despre
             </Link>
