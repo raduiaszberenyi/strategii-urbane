@@ -161,9 +161,55 @@ const projects = [
     description:
       "Plan Urbanistic Zonal pentru reglementarea urbanistică și organizarea funcțională a zonei studiate.",
   },
+
+  {
+    title: "PUD Centru paliativ",
+    county: "Maramureș",
+    type: "PUD",
+    lat: 47.619,
+    lng: 23.619,
+    href: "/proiecte/pud-centru-social",
+    image: "/images/portofolio/pud/locuinta-individuala.jpg",
+    description:
+      "Documentație de urbanism pentru detalierea condițiilor de construire și organizarea urbanistică a amplasamentului destinat unui centru paliativ.",
+  },
+  {
+    title: "PUD Locuință individuală",
+    county: "Maramureș",
+    type: "PUD",
+    lat: 47.614,
+    lng: 23.614,
+    href: "/proiecte/pud-locuinta-individuala",
+    image: "/images/portofolio/pud/centru-paliativ.jpg",
+    description:
+      "Documentație de urbanism pentru detalierea condițiilor de construire și organizarea unei parcele destinate locuirii individuale.",
+  },
+
+  {
+    title: "PMUD Ulmeni",
+    county: "Maramureș",
+    type: "PMUD",
+    lat: 47.4667,
+    lng: 23.3,
+    href: "/proiecte/pmud-ulmeni",
+    image: "/images/portofolio/pmud-ulmeni/pmud-ulmeni.jpg",
+    description:
+      "Plan de Mobilitate Urbană Durabilă pentru dezvoltarea unui sistem de mobilitate eficient, accesibil și sustenabil.",
+  },
+  {
+    title: "PMUD Zlatna",
+    county: "Alba",
+    type: "PMUD",
+    lat: 46.109,
+    lng: 23.234,
+    href: "/proiecte/pmud-zlatna",
+    image: "/images/portofolio/pmud-zlatna/pmud-zlatna.jpg",
+    description:
+      "Plan de Mobilitate Urbană Durabilă pentru dezvoltarea și organizarea sistemului de mobilitate al orașului Zlatna.",
+  },
 ];
 
-const filters = ["Toate", "PUG", "PUZ", "Strategie", "GIS"];
+const filters = ["Toate", "PUG", "PUZ", "PUD", "PMUD"];
 
 const stats = [
   {
@@ -179,10 +225,10 @@ const stats = [
   {
     value: 4,
     suffix: "",
-    label: "Județe",
+    label: "PUD / PMUD",
   },
   {
-    value: 14,
+    value: 18,
     suffix: "",
     label: "Proiecte",
   },
