@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Logo from "./Logo";
 
@@ -49,7 +50,8 @@ export default function Footer() {
             <div className="space-y-3 text-zinc-300">
               <p>Baia Mare, România</p>
               <p>strategiiurbane@gmail.com</p>
-              <p>0754 390 400</p>
+              <p>strategiiurbane@yahoo.com</p>
+              <p>0745 390 400</p>
             </div>
           </div>
         </div>
