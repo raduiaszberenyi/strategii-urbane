@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 import Navbar from "../../components/Navbar";
 
 export default function ContactPage() {
@@ -35,9 +37,15 @@ export default function ContactPage() {
                 Email
               </p>
 
-              <p className="text-2xl font-light">
-                strategiiurbane@gmail.com
-              </p>
+              <div className="space-y-3">
+                <p className="text-2xl font-light">
+                  strategiiurbane@gmail.com
+                </p>
+
+                <p className="text-2xl font-light">
+                  strategiiurbane@yahoo.com
+                </p>
+              </div>
             </div>
 
             <div className="rounded-[32px] bg-zinc-100 p-10">
@@ -46,7 +54,7 @@ export default function ContactPage() {
               </p>
 
               <p className="text-2xl font-light">
-                0754 390 400
+                0745 390 400
               </p>
             </div>
 
@@ -73,12 +81,12 @@ export default function ContactPage() {
               pentru comunități și teritorii în transformare.
             </h2>
 
-            <a
-              href="mailto:strategiiurbane@gmail.com"
+            <Link
+              href="/contact/mesaj"
               className="inline-block rounded-full bg-white px-8 py-4 text-black transition hover:bg-zinc-200"
             >
               Trimite un mesaj
-            </a>
+            </Link>
           </div>
         </section>
       </main>
